@@ -3,7 +3,7 @@ const NavigationBar = () => {
   return (
     <div className="navigation">
       <div>
-        <input type="text" placeholder="Search" />
+        <input type="text" />
       </div>
       <div className="tags">Categories</div>
       <div className="tags">Website Builders</div>
