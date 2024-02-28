@@ -1,0 +1,111 @@
+.card-main{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .card-head{
+    width: 495px;
+    height: 44px;
+    color: #2C384A;
+    font-size: 32px;
+  }
+  .card-containers{
+    display: flex;
+    gap: 22px;
+    .card-container{
+      // background-color: aqua;
+      background-color: white;
+      height: 425px;
+      width: 333px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      .card-img{
+        // width: 141px;
+        width: 100%;
+        height: 148px;
+        // background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-info{
+        width: 100%;
+        // background-color: orange;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+        flex-grow: 1;
+        .card-off{
+          display: flex;
+          flex-direction: row;
+          gap: 4px;
+          .card-off-item{
+            background-color: #F2F4F7;
+            border-radius: 8px;
+            color: #074786;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .card-title{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 16px;
+          font-weight: bold;
+          color: #626E79;
+        }
+        .card-text{
+          font-size: 16px;
+        }
+        .card-price{
+          display: flex;
+          gap: 10px;
+        }
+        .deal{
+          background-color: #1B88F4;
+          width: 100%;
+          height: 48px;
+          font-size: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          border-radius: 12px;
+          border: none;
+        }
+      }
+    }
+  }
+  .signup{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .signup1{
+      font-size: 32px;
+      color: #5C6874;
+    }
+    input{
+      width: 348px;
+      height: 52px;
+      border-radius: 12px 0px 0px 12px;
+      border: none;
+    }
+    button{
+      background-color: #1B88F4;
+      color: white;
+      height: 52px;
+      width: 97px;
+      border-radius: 0px 12px 12px 0px;
+      border: none;
+    }
+  }
+}

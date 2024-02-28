@@ -1,3 +1,4 @@
+import Cards from "../Cards/Cards";
 import "./Body.scss";
 const Body = () => {
   return (
@@ -254,12 +255,41 @@ const Body = () => {
                 <div className="off">26% Off</div>
                 <b>Main highlights</b>
                 <div className="highlights">
-                  
+                  <div className="highlights-1">
+                    <div style={{ display: "flex", gap: "10px" }}>
+                      <div className="highlights-no">9.9</div>
+                      <div className="highlights-info">Building Responsive</div>
+                    </div>
+                    <div style={{ display: "flex", gap: "10px" }}>
+                      <div className="highlights-no">8.9</div>
+                      <div className="highlights-info">Cool</div>
+                    </div>
+                    <div style={{ display: "flex", gap: "10px" }}>
+                      <div className="highlights-no">8.9</div>
+                      <div className="highlights-info">Docs</div>
+                    </div>
+                  </div>
                 </div>
-                <div className="item2-2">
-                  [What You Get]: Receive the WixPro website builder suite,
-                  access to premium design templates, an extensive library of
-                  widgets and apps, and detailed step-by-step guides.
+                <div className="love">
+                  Why we love it
+                  <div className="list" style={{ marginTop: "5px" }}>
+                    <div>
+                      <img src="bluetick.png" alt="" />
+                    </div>
+                    <div>Documentation</div>
+                  </div>
+                  <div className="list">
+                    <div>
+                      <img src="bluetick.png" alt="" />
+                    </div>
+                    <div>Easy Use</div>
+                  </div>
+                  <div className="list">
+                    <div>
+                      <img src="bluetick.png" alt="" />
+                    </div>
+                    <div>Out Of Box</div>
+                  </div>
                 </div>
                 <div className="item2-3">
                   <div>Show more</div>
@@ -270,10 +300,10 @@ const Body = () => {
               </div>
               <div className="item3">
                 <div className="item3-1">
-                  <div className="item3-1-1">9.3</div>
-                  <div className="item3-1-2">Exceptional</div>
+                  <div className="item3-1-1">9.1</div>
+                  <div className="item3-1-2">Very Good</div>
                   <div className="item3-1-3">
-                    <img src="star1.png" alt="" />
+                    <img src="star3png.png" alt="" />
                   </div>
                   <div className="item3-float">
                     <img src="i2.png" alt="" />
@@ -286,6 +316,7 @@ const Body = () => {
             </div>
           </div>
         </div>
+      <Cards/>
       </div>
     </div>
   );

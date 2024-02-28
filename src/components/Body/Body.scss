@@ -67,7 +67,7 @@
       gap: 20px;
       .items-container{
         // height: 272px;
-        background-color: aqua;
+        // background-color: aqua;
         width: 100%;
         padding: 20px;
         position: relative;
@@ -80,13 +80,14 @@
           display: flex;
           .item1{
             height: 100%;
-            width: 160px;
+            width: 190px;
             // outline: 2px solid red;
             display: flex;
             flex-direction: column;
             gap: 10px;
             justify-content: center;
             align-items: center;
+            // margin-right: 30px;
             p{
               font-size: 13px;
               color: #626E79;
@@ -221,6 +222,43 @@
             height: 116px;
             border-radius: 12px;
             margin-left:18px ;
+            padding: 12px;
+            display: flex;
+            .highlights-1{
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              .highlights-no{
+                background-color: white;
+                color: #1B88F4;
+                font-size: 16px;
+                width: 40px;
+                height: 28px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+              }
+              .highlights-info{
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+          .love{
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap:4px;
+            .list{
+              display: flex;
+              gap: 8px;
+              div{
+                display: flex;
+              }
+            }
           }
         }
       }
