@@ -11,17 +11,17 @@ const Body = () => {
         <div className="body2">
           <div className="body2-1">
             <div style={{ gap: "10px" }}>
-              <div>
+              <div style={{display:"flex", alignItems:"center"}}>
                 <img src="tick.png" alt="" />
               </div>
-              <div>Last Updated - </div>
+              <div style={{display:"flex", alignItems:"center"}}>Last Updated - </div>
             </div>
-            <div>February 22, 2020</div>
-            <div>
-              <div>
-                <img src="i.png" alt="" />
+            <div style={{display:"flex", alignItems:"center"}}>February 22, 2020</div>
+            <div style={{gap:"10px"}}>
+              <div style={{display:"flex", alignItems:"center"}}>
+                <img src="I.png"/>
               </div>
-              <div>Advertising Disclosure</div>
+              <div style={{display:"flex", alignItems:"center"}}>Advertising Disclosure</div>
             </div>
           </div>
           <div className="body2-1">
