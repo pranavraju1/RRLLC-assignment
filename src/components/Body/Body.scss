@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .main-body{
   display: flex;
   justify-content: center;
@@ -8,6 +10,9 @@
     width: 1024px;
     display: flex;
     flex-direction: column;
+    @include tablet{
+      width: 100%;
+    }
     .body1{
       font-size: 48px;
       text-align: left;
@@ -19,6 +24,9 @@
       background-color: #E1E4E6;
       margin-top: 10px;
       margin-bottom: 15px;
+      @include tablet{
+        width: 100%;
+      }
     }
     .body2{
       display: flex;
@@ -43,6 +51,9 @@
       gap: 15px;
       margin-bottom: 16px;
       color: #2C384A;
+      @include mobile{
+        gap: 0px;
+      }
       .body3-items{
         background: white;
         height: 36px;
@@ -78,6 +89,10 @@
           // outline: 2px solid salmon;
           border-radius: 12px;
           display: flex;
+          @include mobile{
+            flex-direction: column;
+            height: 100%;
+          }
           .item1{
             height: 100%;
             width: 190px;
@@ -88,6 +103,9 @@
             justify-content: center;
             align-items: center;
             // margin-right: 30px;
+            @include mobile{
+              width: 100%;
+            }
             p{
               font-size: 13px;
               color: #626E79;
@@ -129,6 +147,9 @@
             display: flex;
             flex-direction: column;
             color: #2C384A;
+            @include mobile{
+              width: 100%;
+            }
             .item2-1{
               font-size: 16px;
               line-height: 24px;
@@ -196,13 +217,20 @@
                 align-items: center;
                 border: none;
                 border-radius: 12px;
-  
+                transition: transform 0.3s ease;
+                cursor: pointer;
               }
+              button:hover {
+                transform: scale(1.1); /* Adjusted scale value */
+            }
             }
           }
         }
         .extra{
           height: 436px;
+          @include mobile{
+            height: 100%;
+          }
           .off{
             background-color: #F2F4F7;
             height: 26px;
@@ -224,6 +252,9 @@
             margin-left:18px ;
             padding: 12px;
             display: flex;
+            @include tablet{
+              width: 100%;
+            }
             .highlights-1{
               display: flex;
               flex-direction: column;

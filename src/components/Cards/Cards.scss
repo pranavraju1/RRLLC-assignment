@@ -1,3 +1,4 @@
+@import '../../App.scss';
 .card-main{
   display: flex;
   flex-direction: column;
@@ -7,10 +8,17 @@
     height: 44px;
     color: #2C384A;
     font-size: 32px;
+    @include mobile{
+      width: 100%;
+      height: 100%;
+    }
   }
   .card-containers{
     display: flex;
     gap: 22px;
+    @include mobile{
+      flex-direction: column;
+    }
     .card-container{
       // background-color: aqua;
       background-color: white;
@@ -22,6 +30,9 @@
       justify-content: center;
       align-items: center;
       padding: 20px;
+      @include mobile{
+        width: 100%;
+      }
       .card-img{
         // width: 141px;
         width: 100%;
@@ -39,6 +50,9 @@
         justify-content: space-between;
         gap: 5px;
         flex-grow: 1;
+        @include mobile{
+          align-items: center;
+        }
         .card-off{
           display: flex;
           flex-direction: row;
@@ -80,6 +94,16 @@
           color: white;
           border-radius: 12px;
           border: none;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+          @include mobile{
+            width: 232px;
+            // margin-left: auto;
+            // margin-right: auto;
+          }
+        }
+        .deal:hover{
+          transform: scale(1.1); 
         }
       }
     }
@@ -89,6 +113,9 @@
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
+    @include mobile{
+      flex-direction: column;
+    }
     .signup1{
       font-size: 32px;
       color: #5C6874;
@@ -98,6 +125,9 @@
       height: 52px;
       border-radius: 12px 0px 0px 12px;
       border: none;
+      @include mobile{
+        width: 70%;
+      }
     }
     button{
       background-color: #1B88F4;
@@ -106,6 +136,14 @@
       width: 97px;
       border-radius: 0px 12px 12px 0px;
       border: none;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      @include mobile{
+        width: 30%;
+      }
+    }
+    button:hover {
+      transform: scale(1.1); 
     }
   }
 }
