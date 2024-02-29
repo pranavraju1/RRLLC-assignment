@@ -28,7 +28,7 @@ const NavigationBar = () => {
       className="bg-body-tertiary-dark navigation"
       sticky="top"
     >
-      <Container>
+      <Container className="container">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Form className="d-flex">
           <Form.Control
